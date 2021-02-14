@@ -3,16 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { CommanModule } from '../comman/comman.module';
+import { HeaderComponent } from '../comman/header/header.component';
+import { FooterComponent } from '../comman/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
-    CommanModule,
     LayoutRoutingModule
   ]
 })
