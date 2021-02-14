@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'bayenaapp'`, () => {
+  it(`should have as title 'lazyLoading'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bayenaapp');
+    expect(app.title).toEqual('lazyLoading');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('bayenaapp app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('lazyLoading app is running!');
   });
 });

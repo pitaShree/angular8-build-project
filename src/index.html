@@ -6,9 +6,12 @@
   <title>Students Need Money You Need website </title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- <link rel="stylesheet" href="./assets/css/animate.css" /> -->
-  <link rel="stylesheet" href="./assets/css/animate.css">
+  
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/apple-touch-icon-114x114.png">
+  <link rel="stylesheet" href="./assets/css/animate.css" />
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/et-line-icons.css" />
   <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
@@ -23,10 +26,13 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
   <link rel="stylesheet" href="./assets/css/custom.css" />
+
 </head>
 
 <body>
   <app-root></app-root>
+
+  <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/modernizr.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.bundle.js"></script>
@@ -55,8 +61,34 @@
   <script type="text/javascript" src="./assets/js/retina.min.js"></script>
   <script type="text/javascript" src="./assets/revolution/js/jquery.themepunch.tools.min.js"></script>
   <script type="text/javascript" src="./assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
+  
+  
+  <!-- setting -->
   <script type="text/javascript" src="./assets/js/main.js"></script>
+  
+
+  <script type="text/javascript">
+    myFunction();
+
+    function myFunction() {
+      setTimeout(function () {
+        $(document).ready(function () {
+          $("#autoOpenModal").trigger('click');
+        })
+      }, 4000);
+
+      $(document).ready(function () {
+        $(".buy-theme a").attr('href', '#');
+        $(".buy-theme a").removeAttr('target');
+        $(".buy-theme a span").html('Buidl Web');
+        $(".buy-theme a").attr('id', 'autoOpenModal');
+        $(".buy-theme a").attr('data-target', '#contact-modal');
+        $(".buy-theme a").attr('data-toggle', 'modal');
+        $(".all-demo a").attr('href', '#');
+      })
+    }
+
+  </script>
 </body>
 
 </html>
